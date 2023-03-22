@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        PIET FACULTY
+    </title>
+    <style>
+        body {
+            background-image: url("images/adminbg.jpg");
+            background-size: 100%;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-delay: 5ms;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            from {
+                background-image: url("images/adminbg.jpg");
+            }
+
+            to {
+                background-image: url("images/BG.jpg");
+            }
+        }
+
+        .slide-left {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide-left p {
+            animation: slide-left 20s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slide-left {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        .topnav {
+      overflow: hidden;
+      background-color:black;
+      color: white;
+      margin: 0%;
+      text-align: left;
+      color: black;
+      font-size: 25px;
+    }
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: black;
+      color: whitesmoke;
+    }
+    button {
+    padding: 10px;
+    width: 300%;
+    background-color: pink;
+    margin: 10px 0px;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+input[type=text] {
+    background-color: pink;
+    width: 100%;
+    margin: 20px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input[type=date] {
+    background-color: pink;
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+
+    </style>
+</head>
+
+<body style="color:antiquewhite;">
+    <header style="background-color:black;">
+        <header style="color:white;">
+            <header style="font-size: 50px;"><b>
+                    <center>EMPLOYEE LEAVE/OD APPLICATION FORM</center>
+                </b>
+            </header>
+        </header>
+    </header>
+    <div class="topnav">
+        <td><a href="project.html"><b>HOME</b></a></td>
+    </div>
+    <br>
+    <br>
+    <div class="slide-left">
+        <center>
+            <p style="color:red; font-size: 30px;">Please fill in the form below if you need to leave work.
+                All leave applications need to be approved by both the applicant and the manager.</p>
+        </center>
+    </div>
+    <form onclick="submit">
+        <div align="center">
+            <table>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Faculty Name</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder=" ENTER NAME" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Designation</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="ENTER DESIGNATION" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Emp.ID</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="EMPLOYEE ID" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Institute</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="INSTITUTE NAME" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Department</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="ENTER DEPARTMENT" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Type of leave:</b>
+                    </td>
+                    <td style="font-size:25px;">
+                        <input type="checkbox" required><b>Planned</b>
+                        &nbsp&nbsp&nbsp
+                        <input type="checkbox" required><b>Telephonic</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Leave/OD taken so far:</b>
+                    </td>
+                    <td>
+                        <input type="text" name="name" size="35" maxlength="35" value="" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Out of total Sanctioned:</b>
+                    </td>
+                    <td>
+                        <input type="text" name="name" size="35" maxlength="35" value="" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>HOD Name</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder=" ENTER HOD NAME" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Leave/OD applied from(Date):</b>
+                    </td>
+                    <td style="font-size:25px;">
+                        <input type="date" placeholder="DD/MM/YYYY" required> <b>To</b>
+                        <input type="date" placeholder="DD/MM/YYYY " required>
+
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>No. Of Days</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="ENTER NO. OF LEAVE DAYS" name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:x-large;">
+                        <b>Reason</b>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="MENTION REASON " name="name" required>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+            </table>
+            <h2><b><u>Leave Arrangements</u></b></h2>
+        </div>
+    </form>
+    <center>
+        <div class="button">
+            <table>
+                <tr>
+                    <th style="font-size: 20px; ">S No.</th>
+                    <th style="font-size: 20px; "> Date</th>
+                    <th style="font-size: 20px; ">Name of alternative lecture</th>
+                    <th style="font-size: 20px; "> Time</th>
+                    <th style="font-size: 20px; "> Period</th>
+                    <th style="font-size: 20px; "> Subject to taken</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="2" maxlength="4" value="">
+                    </td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" size="4" maxlength="4" value="">
+                    </td>
+                    <td><input type="date">
+                    </td>
+                    <td><input type="text" name="name" size="35" maxlength="35" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="15" maxlength="15" value="">
+                    </td>
+                    <td><input type="text" name="name" size="25" maxlength="25" value="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                    </td>
+
+                    <td>
+                        <button><b>SUMBIT FORM</b></button>
+                        <br>
+                        <br>
+                    </td>
+                    </td>
+        </div>
+        </tr>
+
+</body>
+
+</html>

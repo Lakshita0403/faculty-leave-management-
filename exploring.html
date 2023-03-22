@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+<title>Email validation Check </title>
+<link rel="stylesheet" href="css/estyle.css">
+<script src="https://kit.fontawesome.com/72459508f5.js" crossorigin="anonymous"></script>
+<style>
+    html,body {
+display: contents;
+height: 100%;
+place-items: center;
+background-image: url("images/login.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+} 
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>POORNIMA INSTITUTE OF ENGINEERING AND TECHNOLOGY</h1>
+        <p2 style="font-size:25px;">Technical School in Sitapura, Jaipur, Rajasthan</p2>
+      </div>
+      <div class="topnav">
+        <center>
+          <a href="https://www.poornima.org/"><img src="images/home-removebg-preview.png" width="3%" height="3%"></a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp;
+          <a href=mailto:"2021pietcsmahak100@poornima.org"><img src="images/mail.jpg" width="3%" height="3%"></a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp;
+          <a href="https://instagram.com/piet_jaipur?igshid=YmMyMTA2M2Y="><img src="images/instagram.jpg" width="3%"
+              height="3%"></a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp;
+          <a href="https://www.linkedin.com/school/poornima-group-of-colleges/"><img
+              src="images/linkedin-removebg-preview.png" width="3%" height="3%"></a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp;
+          <a href="https://twitter.com/PIET_Jaipur?t=MxeihiSvkKGELVDUssC_TA&s=35"><img src="images/twitter.jpg" width="3%"
+              height="3%"></a>
+          &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp;
+        </center>
+      </div>
+      <center><br><br>
+    <br>
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="content">
+<header>Email Validation Check</header>
+<form action="project.html">
+<div class="field">
+<input onkeyup="check()" id="email" type="text" placeholder="Enter Email Address">
+</div>
+<div class="error-text">Please Enter Valid Email Address</div>
+<button>Submit</button>
+</form>
+</div></center>
+<div class="slide-left">
+    <p>
+        NEW PASSWORD WILL BE PROVIDE via E-MAIL>>>>>CHECK  IT</p>
+
+</div>
+<script>
+const email = document.querySelector("#email");
+const error = document.querySelector(".error-text");
+const btn = document.querySelector("button");
+let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+function check(){
+if(email.value.match(regExp)){
+email.style.borderColor = "darkgreen";
+error.style.display = "none";
+btn.style.display = "block";
+}else{
+email.style.borderColor = "red";
+error.style.display = "block";
+btn.style.display = "none";
+}
+if(email.value == ""){
+email.style.borderColor = "grey";
+error.style.display = "none";
+btn.style.display = "none";
+}
+}
+
+</script>
+  
+</body>
+</html>
